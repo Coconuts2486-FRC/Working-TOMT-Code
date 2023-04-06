@@ -74,7 +74,7 @@ public class Robot extends TimedRobot {
   @Override
   public void teleopPeriodic() {
     yAxis = joystick.getRawAxis(1);
-    zAxis = joystick.getRawAxis(2);
+    zAxis = joystick.getRawAxis(0);
 
     left.set(ControlMode.PercentOutput, yAxis - zAxis);
     right.set(ControlMode.PercentOutput, yAxis + zAxis);
